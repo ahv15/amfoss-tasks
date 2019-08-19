@@ -10,3 +10,5 @@
 
 
 I also watched around 3 CS50 videos in the beginning to get a basic understanding of programming and attempted a few problems in Task-13.My blog has been written in my website. Also started creating a basic cli using golang but it will take more time.
+
+My blogspot can be found in the following link: https://ahv15.github.io/2019/08/19/Blogpost.html 
