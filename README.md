@@ -6,3 +6,6 @@
 |Task-7|https://github.com/ahv15/amfoss-tasks/tree/master/Task-7|
 |Task-8|https://github.com/ahv15/amfoss-tasks/tree/master/Task-8|
 |Task-9|https://ahv15.github.io/|
+
+
+I also watched around 3 CS50 videos in the beginning to get a basic understanding of programming and attempted a few problems in Task-13.
