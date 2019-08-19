@@ -3,6 +3,7 @@
 | --- | --- |
 |Task-1| https://github.com/ahv15/amfoss-tasks/tree/master/task-1 |
 | Task-2  |https://github.com/ahv15/amfoss-tasks/tree/master/task-2 |
+|Task-3|https://github.com/ahv15/amfoss-tasks/tree/master/Task-3|
 |Task-7|https://github.com/ahv15/amfoss-tasks/tree/master/Task-7|
 |Task-8|https://github.com/ahv15/amfoss-tasks/tree/master/Task-8|
 |Task-9|https://ahv15.github.io/|
