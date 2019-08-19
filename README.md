@@ -8,4 +8,4 @@
 |Task-9|https://ahv15.github.io/|
 
 
-I also watched around 3 CS50 videos in the beginning to get a basic understanding of programming and attempted a few problems in Task-13.My blog has been written in my website.
+I also watched around 3 CS50 videos in the beginning to get a basic understanding of programming and attempted a few problems in Task-13.My blog has been written in my website. Also started creating a basic cli using golang but it will take more time.
