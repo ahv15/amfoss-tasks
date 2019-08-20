@@ -15,9 +15,9 @@ Nothing much as it seems more or less fair.Hopefully there is some leniency towa
 
 4.What is your plan for the next six months?
 
-Nothing definite, hope to find out as time progresses.
+Nothing definite, hope to learn and try out some new technologies.After the recent coding contest, I am interested in hackathons but I still need to learn some more and increase my speed and fix the silly mistakes.
 
 
 5.How would you contribute back to the club?
 
-Can't say for sure but maybe help others and learn from others.
+I would focus on club activities and help others and learn from others.
