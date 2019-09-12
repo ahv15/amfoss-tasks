@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="600" height="400" style="border:1px solid #d3d3d3;">
+
+
+<script>
+var i;
+var user1y=150;
+var user2y=150;
+var ballx=300;
+var bally=200;
+var ballvx=3;
+var ballvy=3;
+var user1score=0;
+var user2score=0;
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+function rect(x,y,l,w,c){
+ctx.beginPath();
+ctx.rect(x,y,l,w);
+ctx.fillstyle= c;
+ctx.fill();
+}
+for (i=0;i<400;i+=15) {
+    rect(298,0+i,2,10,"black");       
+}
+rect(20, user1y, 15, 100,"black");
+rect(560, user2y, 15, 100,"black");
+function circle(x,y,r){
+ctx.beginPath();
+ctx.arc(x,y,r,0,Math.PI*2)
+ctx.fillstyle= "rgb(255,100,0)";
+ctx.fill();
+}
+circle(ballx,bally,10);
+function scores(score,x,y){
+ctx.font = "50px Georgia";
+ctx.fillText(score, x, y);
+}
+
+function ballreset(){
+ballx=300;
+bally=200;
+if (ballvx<0) {
+       ballvx=5;
+    }
+else {
+       ballvx=-5;
+    }
+}
+
+document.onkeydown = function(event) {
+        switch (event.keyCode) {
+           case 83:
+              ctx.clearRect(550, 0, 40, 400);
+              user2y+=15;
+              rect(560, user2y, 15, 100,"black");
+              break;
+           case 40:
+              ctx.clearRect(10, 0, 40, 400);
+              user1y+=15;
+              rect(20, user1y, 15, 100,"black");
+              break;
+           case 87:
+              ctx.clearRect(550, 0, 40, 400);
+              user2y-=15;
+              rect(560, user2y, 15, 100,"black");
+              break;
+           case 38:
+              ctx.clearRect(10, 0, 40, 400);
+              user1y-=15;
+              rect(20, user1y, 15, 100,"black");
+              break;
+        }
+    };
+function ballm(){
+ctx.clearRect(ballx-15,bally-15,30,30);
+for (i=0;i<400;i+=15) {
+          rect(298,0+i,2,10,"black");       
+       }
+ballx+=ballvx;
+bally+=ballvy;
+circle(ballx,bally,10);
+if (ballx<10) {
+ctx.clearRect(0, 0, 40, 400);
+rect(20, user1y, 15, 100,"black")
+}
+else if ( ballx>580) {
+ctx.clearRect(550, 0, 60, 400);
+rect(560, user2y, 15, 100,"black");
+}
+ 
+}
+function update(){
+scores(user2score,450,30);
+scores(user1score,150,30);
+rect(20, user1y, 15, 100,"black");
+rect(560, user2y, 15, 100,"black");
+    if (ballx<10) {
+        ctx.clearRect(400, 0,150,50);
+        user2score+=1;
+        scores(user2score,450,30);
+        ballreset();
+      }
+    else if ( ballx>590) {
+        ctx.clearRect(100, 0,150, 50);
+        user1score+=1;
+        scores(user1score,150,30);
+        ballreset();
+      }
+    else if (bally<10) {
+       ballvy=-ballvy;
+     }
+    else if (bally>390) {
+       ballvy=-ballvy;
+     }
+    else if (ballx<45 && user1y<=bally-5 && bally-5<=user1y+100){
+       ballvx=-ballvx;
+     }
+    else if (ballx>560 && user2y<=bally-5 && bally-5<=user2y+100){
+       ballvx=-ballvx;
+     }
+}
+var framepersecond=50;
+function game(){
+var loop = setInterval(update,1000/framepersecond);
+var move=setInterval(ballm,1000/framepersecond);
+}
+game();
+</script> 
+
+</body>
+</html>
