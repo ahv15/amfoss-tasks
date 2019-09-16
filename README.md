@@ -12,6 +12,6 @@
 |Task-12|https://github.com/ahv15/amfoss-tasks/tree/master/Task-12|
 
 
-I also watched around 3 CS50 videos in the beginning to get a basic understanding of programming and attempted a few problems in Task-13.My blog has been written in my website. Having some trouble with the twitter cli need to modify it.Completed ping-pong game using javascript and also attempted task-4 need to check to find error.Completed bandit with some difficulty from level 7 onwards.Task-5,10,13 are not complete. And Task-3,4,6 have some errors.  
+I also watched around 3 CS50 videos in the beginning to get a basic understanding of programming and attempted a few problems in Task-13.My blog has been written in my website. Having some trouble with the twitter cli need to modify it.Completed ping-pong game using javascript and also attempted task-4 need to check to find error.Completed bandit with some difficulty from level 7.Task-5,10,13 are not complete. And Task-3,4,6 have some errors.  
 
 My blogspot can be found in the following link: https://ahv15.github.io/2019/08/19/Blogpost.html 
