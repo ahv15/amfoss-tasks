@@ -19,7 +19,7 @@ const query = '{' +
                              '}' +
                             '}' +
                            '}' 
-                    '
+                    
 
 axios.post(endpoint, {query: query}, {headers: oauth})
   .then(function (response) {
