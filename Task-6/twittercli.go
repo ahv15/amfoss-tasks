@@ -16,12 +16,24 @@ func main(){
 	token := oauth1.NewToken("1170003422830940161-WRN740jqRwhvtmrfHJT3pyELZJgLF3", "ZSyczgMCQDICd6FjupFDo5kxWDsIoee0MUEujwJFjeyfz")
 	httpClient := config.Client(oauth1.NoContext, token)
 	client := twitter.NewClient(httpClient)
+	params := &twitter.FollowerListParams{
+        ScreenName: *test,
+       }
+	followers, resp, err := client.Followers.List(params)
 	f, err := os.Create("Randomn.txt")
         if err != nil {
            fmt.Println(err)
            return
         }
-	followers, resp, err := client.Followers.List(&twitter.FollowerListParams{})
+	var i int=0
+	fmt.Println(resp, err)
+	f.WriteString("The given user has the following followers " + *test)
+	for _, follower := range followers.Users {
+		i=i+1
+		f.WriteString("\n" + follower.ScreenName)
+	}
+	f.WriteString("\n")
+        f.Close()
 	
 
 }
