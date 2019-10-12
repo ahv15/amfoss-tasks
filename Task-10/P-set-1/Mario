@@ -3,9 +3,15 @@
 
 int main(void)
 {
-    int i,j,n;
-    printf("Enter the number of rows required\n");
-    scanf("%d", &n);
+    int i,j,n,c;
+    c=0;
+    while(c==0){
+               printf("Enter the number of rows required\n");
+               scanf("%d", &n);
+               if(n>0 && n<9){
+                   ++c;
+               }
+    }
     for(i=1;i<=n;i++){
         for(j=1;j<=n-i;j++){
             printf(" ");
